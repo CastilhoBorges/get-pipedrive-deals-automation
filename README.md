@@ -74,7 +74,7 @@ API disponível em http://localhost:3000/processar-deals
 
 ### 2. Acesse a interface web
 
-Abra seu navegador e vá para: **http://localhost:3000**
+Abra seu navegador e vá para: **http://localhost:3333**
 
 ### 3. Execute o processamento
 
