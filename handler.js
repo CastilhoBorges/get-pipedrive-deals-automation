@@ -56,7 +56,6 @@ export const handler = async () => {
       Fechamento: [],
     };
 
-    // Contadores para estatísticas
     let organizationsNotFound = 0;
     let organizationsFound = 0;
     let processedDeals = 0;
@@ -94,7 +93,6 @@ export const handler = async () => {
           PIPEDRIVE_API_KEY
         );
 
-        // Contabilizar organizações
         if (organization) {
           organizationsFound++;
         } else if (org_id) {
@@ -141,7 +139,6 @@ export const handler = async () => {
       })
     );
 
-    // Estatísticas finais
     console.log('\n📊 ESTATÍSTICAS FINAIS:');
     console.log(`   Total de deals processados: ${deals.length}`);
     console.log(`   Organizações encontradas: ${organizationsFound}`);
@@ -154,7 +151,6 @@ export const handler = async () => {
     try {
       mkdirSync(dataDir, { recursive: true });
     } catch (error) {
-      // Pasta já existe
     }
 
     const timestamp = Date.now();
@@ -162,7 +158,6 @@ export const handler = async () => {
     const fileName = `${timestamp}_${uuid}.json`;
     const filePath = join(dataDir, fileName);
 
-    // Adicionar metadados ao arquivo
     const finalData = {
       metadata: {
         generatedAt: new Date().toISOString(),
