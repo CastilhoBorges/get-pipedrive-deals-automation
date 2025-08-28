@@ -171,7 +171,7 @@ npm run dev
 
 ### Problema: "ENOTFOUND" ou erro de conexão
 
-**Solução**: Verifique se a URL base no `.env` está correta (ex: `minhaempresa.pipedrive.com`).
+**Solução**: Verifique se a URL base no `.env` está correta (ex: `api.pipedrive.com`).
 
 ### Problema: Pasta `data` não existe
 
@@ -180,28 +180,7 @@ npm run dev
 ## 📁 Estrutura do projeto
 
 ```
-pipeline-data-processor/
-├── 📄 server.js              # Servidor Express
-├── 📄 handler.js             # Lógica principal de processamento
-├── 📄 index.html             # Interface web
-├── 📄 package.json           # Dependências do projeto
-├── 📄 .env                   # Variáveis de ambiente (criar)
-├── 📄 README.md              # Este arquivo
-├── 📁 functions/             # Funções auxiliares
-│   ├── get-pipeline-by-id.js
-│   ├── get-deals-by-pipeline-id.js
-│   ├── get-person-by-id.js
-│   ├── get-organization-by-id.js
-│   ├── get-deal-fields.js
-│   ├── get-notes-by-deal-id.js
-│   ├── get-activities-by-deal-id.js
-│   ├── format-activities.js
-│   ├── format-notes.js
-│   └── formated-custom-fields.js
-├── 📁 utils/
-│   └── code-sleep.js
-└── 📁 data/                  # Arquivos gerados (criada automaticamente)
-    └── timestamp_uuid.json
+VOU FAZER UM CLEAN CODE NESSE PROJETO RS, POR ENQUANTO FOI SO PARA TESTE
 ```
 
 ## 🔒 Segurança
